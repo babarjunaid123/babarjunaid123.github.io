@@ -1,14 +1,30 @@
-[
-  {
+{
+  "products": [
+    {
     "id": 1,
-    "title": "Post 1"
+    "pname": "samsung glaxy",
+    "quantity": "50",
+    "price": "20000",
+    "img": "images/mobile.jpg"
   },
   {
     "id": 2,
-    "title": "Post 2"
+    "pname": "nokia 500",
+    "quantity": "30",
+    "price": "10000",
+    "img": "images/mobile2.jpg"
   },
   {
     "id": 3,
-    "title": "Post 3"
+    "pname": "iphone 3",
+    "quantity": "20",
+    "price": "50000",
+    "img": "images/mobile3.png"
   }
-]
+
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
