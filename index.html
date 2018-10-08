@@ -18,10 +18,8 @@
    <div ng-app="myApp" ng-controller="myCtrl"> 
 
 
-<p>Today's welcome message is :merge local to remote</p>
-<h1>{{myWelcome}}welcome </h1>
+<p>Today's welcome message is: LOcal changes in dev branch</p>
 
-<p>Today's welcome message is:local</p>
 <h1>{{myWelcome}}welcome33333 </h1>
 
 
@@ -30,11 +28,9 @@
 <script>
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope, $http) {
-<<<<<<< HEAD
-    $http.get("https://www.metaweather.com/api/location/search/?query=london")
-=======
+
     $http.get("https://www.metaweather.com/static/img/weather/sn.svg")
->>>>>>> babarchanges
+
     .then(function(response) {
         console.log(response);
     });
