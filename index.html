@@ -8,22 +8,33 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
 	<title>Meta Weather11111</title>
+
 
 </head>
 <body>
    
    <div ng-app="myApp" ng-controller="myCtrl"> 
 
+
 <p>Today's welcome message is :merge local to remote</p>
 <h1>{{myWelcome}}welcome </h1>
+
+<p>Today's welcome message is:local</p>
+<h1>{{myWelcome}}welcome33333 </h1>
+
 
 </div>
 
 <script>
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope, $http) {
+<<<<<<< HEAD
     $http.get("https://www.metaweather.com/api/location/search/?query=london")
+=======
+    $http.get("https://www.metaweather.com/static/img/weather/sn.svg")
+>>>>>>> babarchanges
     .then(function(response) {
         console.log(response);
     });
@@ -31,4 +42,8 @@ app.controller('myCtrl', function($scope, $http) {
 </script>
 
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> babarchanges
