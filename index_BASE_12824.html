@@ -2,40 +2,27 @@
 <html>
 <head>
 	
-
 	<script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-
-	<title>Meta Weather11111</title>
-
+	<title>Meta Weather666</title>
 
 </head>
 <body>
    
    <div ng-app="myApp" ng-controller="myCtrl"> 
 
-
 <p>Today's welcome message is: LOcal changes in dev branch</p>
-
 <h1>{{myWelcome}}welcome33333 </h1>
 
-
-<<<<<<< HEAD
-=======
-
-<p>again change in dev</p>
->>>>>>> babarchanges
 </div>
 
 <script>
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope, $http) {
-
     $http.get("https://www.metaweather.com/static/img/weather/sn.svg")
-
     .then(function(response) {
         console.log(response);
     });
@@ -43,8 +30,4 @@ app.controller('myCtrl', function($scope, $http) {
 </script>
 
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> babarchanges
