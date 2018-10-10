@@ -30,6 +30,7 @@ app.controller('myCtrl', function($scope, $http) {
     $http.get("https://www.metaweather.com/static/img/weather/sn.png")
     .then(function(response) {
       $scope.myimg=response.data;
+      console.log(response.data);
     });
 });
 
