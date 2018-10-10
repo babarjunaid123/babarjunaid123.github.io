@@ -16,7 +16,7 @@
 
 <p>Today's welcome message is: LOcal changes in dev branch</p>
 <h1>{{myWelcome}}welcome33333 </h1>
-
+{{ myimg }}
 
 
 <p>again change in dev</p>
@@ -29,7 +29,7 @@ var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope, $http) {
     $http.get("https://www.metaweather.com/static/img/weather/sn.svg")
     .then(function(response) {
-        console.log(response.data);
+      $scope.myimg=response.data;
     });
 });
 
