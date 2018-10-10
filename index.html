@@ -17,7 +17,7 @@
 <p>Today's welcome message is: LOcal changes in dev branch</p>
 <h1>{{myWelcome}}welcome33333 </h1>
 {{ "your selected city is" + myimg.title +"and location is "+ myimg.location_type }}
-
+{{ myimg }}
 
 <p>again change in dev</p>
 </div>
@@ -30,6 +30,7 @@ app.controller('myCtrl', function($scope, $http) {
 $http.get("https://www.metaweather.com/api/location/search/?query=london")
     .then(function(response) {
       $scope.myimg=response.data;
+      console.log(response);
       console.log(response.data);
     });
 });
