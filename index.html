@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+	<?php 
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json; charset=UTF-8");
+  ?>
 	<script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -16,8 +19,8 @@
 
 <p>Today's welcome message is: LOcal changes in dev branch</p>
 <h1>{{myWelcome}}welcome33333 </h1>
-{{ "your selected city is" + myimg.title +"and location is "+ myimg.location_type }}
-{{ myimg }}
+{{ "your selected city is" + myimg.title +"and location type is "+ myimg.location_type }}
+
 
 <p>again change in dev</p>
 </div>
