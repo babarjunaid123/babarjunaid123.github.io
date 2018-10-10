@@ -27,7 +27,7 @@
 <script>
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope, $http) {
-    $http.get("https://www.metaweather.com/static/img/weather/sn.png")
+    $http.get("https://www.metaweather.com/static/img/weather/png/sn.png")
     .then(function(response) {
       $scope.myimg=response.data;
       console.log(response.data);
